@@ -1,0 +1,69 @@
+.accordion-main {
+  background: rgb(30, 243, 246);
+  background: linear-gradient(27deg, rgba(30, 243, 246, 1) 0%, rgba(61, 92, 182, 1) 69%);
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.accordian-item {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 7px 2px;
+  width: 600px;
+  -webkit-box-shadow: 4px 4px 10px -3px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 4px 4px 10px -3px rgba(0, 0, 0, 0.73);
+  box-shadow: 4px 4px 10px -3px rgba(0, 0, 0, 0.73);
+  cursor: pointer;
+}
+
+.accordian-title {
+  font-weight: 600;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordian-title h4 {
+  font-size: 17px;
+  width: 80%;
+}
+
+.accordian-title span {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(68, 68, 68, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+}
+
+.accordian-content {
+  font-weight: 400;
+  width: 80%;
+  font-size: 15px;
+  color: #444;
+  overflow: hidden;
+  padding-left: 10px;
+  height: 0;
+  transition: all .5s ease-in-out;
+}
+
+.accordian-content.show {
+  height: auto;
+  transition: all .5s ease-in-out;
+
+}
